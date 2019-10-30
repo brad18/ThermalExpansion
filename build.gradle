@@ -59,7 +59,7 @@ dependencies {
 
 //Pull the mod version from code.
 project.config.mod_version = pullVersion()
-version = "${project.config.mod_version}." + (System.getenv("BUILD_NUMBER") ?: "1")
+version = "${project.config.mod_version}." + (System.getenv("BUILD_NUMBER") ?: "43")
 println "Starting build of ${archivesBaseName}. Version: ${version}"
 println "Using Forge ${config.forge_version}, for Minecraft ${config.mc_version}"
 
