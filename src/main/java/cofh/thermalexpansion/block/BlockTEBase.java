@@ -181,11 +181,6 @@ public abstract class BlockTEBase extends BlockCoreTile implements IConfigGui {
 	@Override
 	public boolean canDismantle(World world, BlockPos pos, IBlockState state, EntityPlayer player) {
 
-		TileNameable tile = (TileNameable) world.getTileEntity(pos);
-
-		if (tile instanceof TileAugmentableSecure && ((TileAugmentableSecure) tile).isCreative && !CoreUtils.isOp(player)) {
-			return false;
-		}
 		return super.canDismantle(world, pos, state, player);
 	}
 
